@@ -10,7 +10,6 @@ app.use(express.static('public'));
 
 // This tells Mongoose which database we want to connect to.
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/pizza-hunt', {
-  // useFindAndModify: false,
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
